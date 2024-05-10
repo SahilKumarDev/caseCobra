@@ -1,6 +1,7 @@
 'use client'
 
 import { cn } from '@/lib/utils'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 
 const STEPS = [
@@ -55,6 +56,7 @@ const Steps = () => {
                 <span className='flex-shrink-0'>
                   <img
                     src={imgPath}
+                    alt='image Path'
                     className={cn(
                       'flex h-20 w-20 object-contain items-center justify-center',
                       {

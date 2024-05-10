@@ -2,7 +2,7 @@
 
 import { Progress } from '@/components/ui/progress'
 import { useToast } from '@/components/ui/use-toast'
-import { useUploadThing } from '@/lib/uploadthing'
+import { useUploadThing } from '@/lib/uploadingThings'
 import { cn } from '@/lib/utils'
 import { Image, Loader2, MousePointerSquareDashed } from 'lucide-react'
 import { useRouter } from 'next/navigation'
