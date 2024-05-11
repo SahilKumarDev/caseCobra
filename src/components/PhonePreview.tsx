@@ -4,6 +4,7 @@ import { CaseColor } from '@prisma/client'
 import { useEffect, useRef, useState } from 'react'
 import { AspectRatio } from './ui/aspect-ratio'
 import { cn } from '@/lib/utils'
+import Image from 'next/image'
 
 const PhonePreview = ({
   croppedImageUrl,
@@ -47,8 +48,9 @@ const PhonePreview = ({
             renderedDimensions.width / (1216 / 121),
           top: renderedDimensions.height / 6.22,
         }}>
-        <img
+          <Image height={96}
           width={renderedDimensions.width / (3000 / 637)}
+          alt='Cropped Image is not found'
           className={cn(
             'phone-skew relative z-20 rounded-t-[15px] rounded-b-[10px] md:rounded-t-[30px] md:rounded-b-[20px]',
             caseBackgroundColor
@@ -58,7 +60,7 @@ const PhonePreview = ({
       </div>
 
       <div className='relative h-full w-full z-40'>
-        <img
+      <Image width={96} height={96}
           alt='phone'
           src='/clearphone.png'
           className='pointer-events-none h-full w-full antialiased rounded-md'

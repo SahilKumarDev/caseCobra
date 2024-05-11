@@ -155,7 +155,8 @@ function ReviewGrid() {
 export function Reviews() {
   return (
     <MaxWidthWrapper className='relative max-w-5xl'>
-      <img
+                    <Image width={96} height={96}
+
         aria-hidden='true'
         alt='What people buying'
         src='/what-people-are-buying.png'
